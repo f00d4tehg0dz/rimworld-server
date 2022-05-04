@@ -22,6 +22,11 @@ docker run -it -p 25555:25555/udp -p 25555:25555 -v /app/docker/temp-vol:/rimwor
 antimodes201/rimworld-server:latest
 ```
 
+The first run of the container will fail as the system must generate Server Settings.txt and World Settings.txt.  Stop the container and edit the configurations as required.  
+The server IP will be automatically set based on the containers IP - Server Local IP: 0.0.0.0
+
+For additional configuration details please see the Open World Server documentation: https://github.com/TastyLollipop/OpenWorld
+
 Currently exposed environmental variables and their default values
 - GAME_PORT 25555
 - TZ America/New_York
