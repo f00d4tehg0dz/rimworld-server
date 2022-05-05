@@ -31,4 +31,10 @@ then
 fi
 
 # Run server
-./"Open World Server"
+if [ `printf "${K8}\n"|tr '[:upper:]' '[:lower:]'` == "true" ] 
+then
+	# Non interactive
+	./"Open World Server" > Logs/`date +%m%d%Y-%H%M`.term.log
+else	
+	./"Open World Server"
+fi

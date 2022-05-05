@@ -5,6 +5,7 @@ MAINTAINER antimodes201
 ARG DEBIAN_FRONTEND=noninteractive
 
 ARG GAME_PORT=25555
+ARG K8=False
 
 # Set some Variables
 ENV ADDITIONAL_OPTS ""

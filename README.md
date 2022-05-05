@@ -27,7 +27,17 @@ The server IP will be automatically set based on the containers IP - Server Loca
 
 For additional configuration details please see the Open World Server documentation: https://github.com/TastyLollipop/OpenWorld
 
+To support Kubernetes and terminal less deployments set the K8 environment variable to True.
+
+```
+docker run -it -p 25555:25555/udp -p 25555:25555 -v /app/docker/temp-vol:/rimworld \
+-e K8="True" \
+--name rimworld \
+antimodes201/rimworld-server:latest
+```
+
 Currently exposed environmental variables and their default values
 - GAME_PORT 25555
+- K8 False
 - TZ America/New_York
 
