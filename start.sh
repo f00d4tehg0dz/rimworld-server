@@ -5,6 +5,7 @@ URL=`curl https://github.com/TastyLollipop/OpenWorld/releases|grep LinuxX64|head
 RemoteVersion=`printf ${URL}|awk -F/ '{print $6}'`
 containerIP=`hostname -i`
 
+cd /rimworld
 # Does version exist?
 if [ ! -f "version.txt" ]
 then
