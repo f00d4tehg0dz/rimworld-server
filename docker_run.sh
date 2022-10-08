@@ -2,6 +2,6 @@
 # Sample run script.  Primarly used in build / testing
 
 docker rm rimworld
-docker run -it -p 25555:25555/udp -p 25555:25555/tcp -v /app/docker/temp-vol:/rimworld \
+docker run -it -p 25555:25555/udp -p 25555:25555/tcp -v /home/ubuntu/Documents/Rimworld:/rimworld \
 --name rimworld \
-antimodes201/rimworld-server:build
+f00d4tehg0dz/rimworld-server:build

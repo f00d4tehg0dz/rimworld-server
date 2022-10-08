@@ -1,5 +1,5 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0
-MAINTAINER antimodes201
+FROM mcr.microsoft.com/dotnet/sdk:3.1
+MAINTAINER f00d4tehg0dz
 
 # quash warnings
 ARG DEBIAN_FRONTEND=noninteractive
