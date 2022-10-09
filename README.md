@@ -1,8 +1,8 @@
 # rimworld-server
-containerization of Rimworld mod Open World Server
+
+Forked from https://hub.docker.com/r/antimodes201/rimworld-server with .NET Core 3.1 update to support latest Open World Server update
 
 
-Build by hand
 ```
 git clone https://github.com/antimodes201/rimworld-server.git
 docker build -t antimodes201/rimworld-server:latest .
